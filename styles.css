@@ -6,10 +6,10 @@ body {
 }
 
 hr {
-  height: 5px;
-  border: none;
-  background-color: #d7c0ae;
+  border: dotted #d7c0ae 6px;
+  border-bottom: none;
   width: 60%;
+  margin: 60px auto;
 }
 
 h1 {
@@ -84,13 +84,14 @@ p {
   padding-bottom: 100px;
 }
 
-.profile {
+#profile {
   background-color: #967e76;
   padding: 20px;
   width: 70%;
   margin: 0 auto 40px auto;
   position: relative;
   top: 0;
+  z-index: -20;
 }
 
 .description {
@@ -98,12 +99,58 @@ p {
 }
 
 .btn {
-  text-decoration: underline;
-  display: block;
-  padding: 0 0 20px;
-  color: #b7c4cf;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-width: 2px;
+  color: #505739;
+  border-color: #333029;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  text-shadow: 0px 1px 0px #ffffff;
+  background: #b7c4cf;
+  text-decoration: none;
+  margin: 20px;
 }
 
 .footer-link {
   padding: 15px;
+}
+
+.footer {
+  background-color: #967e76;
+  padding: 50px 0 20px;
+}
+
+#nav-bar {
+  list-style-type: none;
+  padding: auto 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-bar-element {
+  display: inline;
+  margin: 0 32px;
+  padding: 0 auto;
+}
+
+.nav-bar-element-link {
+  text-decoration: none;
+  color: #967e76;
+}
+
+#nav-header {
+  background-color: #b7c4cf;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
